@@ -1,0 +1,31 @@
+@keyframes showI {
+  0%   {opacity:0}
+  50%  {opacity:0.5}
+  70%  {opacity:0.7}
+  100% {opacity:1}
+}
+
+.iframe {
+	margin: 20px auto 0;
+	padding:0;
+	width: 90%;
+	border: solid 1px #000;
+	border-radius:5px;
+	animation-name: showI;
+  	animation-duration: 3s;
+}
+
+.iframe iframe, .iframe div{
+	float:left;
+	width: 50%;
+}
+
+.iframe div {
+	padding:15px;
+	overflow: hidden;
+	max-height: 315px;
+}
+
+.iframe div:hover {
+	overflow-y: auto;
+}

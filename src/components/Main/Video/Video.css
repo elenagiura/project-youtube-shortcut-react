@@ -1,0 +1,47 @@
+.video {
+	margin: 30px;
+	margin-top: 0;
+	border: solid 2px #000;
+	border-radius: 5px;
+	max-height: 150px;
+	overflow: hidden;
+}
+
+.video:hover {
+	overflow-y: auto;
+	border-color:  #ef0800;
+}
+
+.video a {
+	color: #000;
+	text-decoration: none;
+	display:block;
+	width: 100%;
+}
+
+.video img, .video div{
+	float:left;
+}
+
+.video img{
+	margin: 10px;
+	width: 170px;
+}
+
+.video div{
+	margin: 0 10px;
+	width: 70%;
+}
+
+.video.grid {
+	float:left;
+	width: 30%;
+	margin: 1.5%;
+	margin-top:0;
+	max-height: 350px;
+}
+
+.video.grid img{
+	width:100%;
+	margin: 0;
+}
