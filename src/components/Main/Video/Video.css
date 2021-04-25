@@ -45,3 +45,62 @@
 	width:100%;
 	margin: 0;
 }
+
+.video.grid .video-info{
+	width:95%;
+	margin:5px;
+}
+
+@media all and (max-width:850px) {
+	.video img{
+		width: 24%;
+	}
+
+	.video div{
+		width: 60%;
+	}
+
+	.video div h3{
+		margin:10px 0;
+		font-size:16px;
+	}
+
+	.video div p{
+		font-size:12px;
+	}
+
+	.video.grid{
+		width: 45%;
+	}
+}
+
+@media all and (max-width: 500px) {
+	main ul {
+		margin-top:20px;
+	}
+
+	div.layouts {
+		display:none;
+	}
+
+	.video , .video.grid{
+		float:none;
+		width: 200px;
+		margin: 10px auto;
+		max-height: 250px;
+	}
+
+	.video img, .video.grid img{
+		width: 100%;
+		margin:0;
+	}
+
+	.video div, .video.grid div{
+		width: 100%;
+		margin: 3px;
+	}
+
+	.video div p, .video.grid div p{
+		display: none;
+	}
+}
