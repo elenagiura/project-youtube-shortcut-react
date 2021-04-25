@@ -4,7 +4,7 @@ import { Video } from './Video/Video';
 import { Iframe } from './Video/Iframe/Iframe';
 
 //API key and base of URL
-const key = "AIzaSyCYLONgv7T6XaVpTEF4DAQItoaTMOgYgcU";
+const key = "AIzaSyBfMzahwcdSsYmRI2n3h2H1IxeYV1-9QlE";
 const baseURL = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&type=video&key=${key}`;
 
 export class Main extends React.Component {
