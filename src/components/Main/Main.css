@@ -30,3 +30,7 @@ main>div>button {
 	color: #fff;
 	font-width: bold;
 }
+
+main>div>button.selected {
+	background-color: #b10600;
+}

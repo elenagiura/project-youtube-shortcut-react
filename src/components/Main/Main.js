@@ -55,8 +55,8 @@ export class Main extends React.Component {
 			<main className="wrapper ">
 				{this.showVideo()}
 				<div className='layouts clearfix'>
-					<button onClick={() => this.setState({layout:true})}>GRID</button>
-					<button onClick={() => this.setState({layout:false})}>LIST</button>
+					<button className={`${this.state.layout?'selected':''}`} onClick={() => this.setState({layout:true})}>GRID</button>
+					<button className={`${!this.state.layout?'selected':''}`} onClick={() => this.setState({layout:false})}>LIST</button>
 				</div>
 				<ul className="videos clearfix">
 					{this.showVideos()}
