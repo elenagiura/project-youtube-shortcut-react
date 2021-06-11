@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/project-youtube-shortcut-react/static/css/main.03486b63.chunk.css",
+    "main.js": "/project-youtube-shortcut-react/static/js/main.770114ae.chunk.js",
+    "main.js.map": "/project-youtube-shortcut-react/static/js/main.770114ae.chunk.js.map",
+    "runtime-main.js": "/project-youtube-shortcut-react/static/js/runtime-main.29eb6c5c.js",
+    "runtime-main.js.map": "/project-youtube-shortcut-react/static/js/runtime-main.29eb6c5c.js.map",
+    "static/js/2.a7ada7e7.chunk.js": "/project-youtube-shortcut-react/static/js/2.a7ada7e7.chunk.js",
+    "static/js/2.a7ada7e7.chunk.js.map": "/project-youtube-shortcut-react/static/js/2.a7ada7e7.chunk.js.map",
+    "index.html": "/project-youtube-shortcut-react/index.html",
+    "static/css/main.03486b63.chunk.css.map": "/project-youtube-shortcut-react/static/css/main.03486b63.chunk.css.map",
+    "static/js/2.a7ada7e7.chunk.js.LICENSE.txt": "/project-youtube-shortcut-react/static/js/2.a7ada7e7.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.29eb6c5c.js",
+    "static/js/2.a7ada7e7.chunk.js",
+    "static/css/main.03486b63.chunk.css",
+    "static/js/main.770114ae.chunk.js"
+  ]
+}
