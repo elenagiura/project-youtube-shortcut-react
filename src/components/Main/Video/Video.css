@@ -1,15 +1,9 @@
 .video {
 	margin: 30px;
 	margin-top: 0;
-	border: solid 2px #000;
-	border-radius: 5px;
-	max-height: 150px;
 	overflow: hidden;
-}
-
-.video:hover {
-	overflow-y: auto;
-	border-color:  #ef0800;
+	color: #000;
+	transition: background-color 2s ease;
 }
 
 .video a {
@@ -19,18 +13,36 @@
 	width: 100%;
 }
 
+.video h3 {
+	font-size: 16px;
+	margin: 10px 0;
+}
+
+.video p {
+	font-size: 15px;
+	margin: 10px 0;
+	width: 100%;
+	line-height: 1.2em;
+	height: 3.6em;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+}
+
 .video img, .video div{
 	float:left;
 }
 
 .video img{
-	margin: 10px;
 	width: 170px;
 }
 
 .video div{
-	margin: 0 10px;
+	margin-right: 10px;
 	width: 70%;
+	height: 120px;
+	padding-left: 10px;
 }
 
 .video.grid {
@@ -38,7 +50,6 @@
 	width: 30%;
 	margin: 1.5%;
 	margin-top:0;
-	max-height: 350px;
 }
 
 .video.grid img{
@@ -48,8 +59,17 @@
 
 .video.grid .video-info{
 	width:95%;
-	margin:5px;
 }
+
+.video:hover {
+	background-color: #000;
+}
+
+.video a:hover {
+	color: #fff;
+}
+
+
 
 @media all and (max-width:850px) {
 	.video img{
@@ -57,7 +77,13 @@
 	}
 
 	.video div{
-		width: 60%;
+		display: inline-block;
+		height: auto;
+	}
+
+	.video.grid div{
+		max-height: 130px;
+		min-height: 130px;
 	}
 
 	.video div h3{
@@ -66,7 +92,7 @@
 	}
 
 	.video div p{
-		font-size:12px;
+		font-size:14px;
 	}
 
 	.video.grid{
@@ -74,7 +100,18 @@
 	}
 }
 
-@media all and (max-width: 500px) {
+@media all and (max-width:680px) {
+	.video img{
+		width: 30%;
+	}
+
+	.video div{
+		width: 67%;
+		height: auto;
+	}
+}
+
+@media all and (max-width: 580px) {
 	main ul {
 		margin-top:20px;
 	}
@@ -85,9 +122,8 @@
 
 	.video , .video.grid{
 		float:none;
-		width: 200px;
+		width: 80%;
 		margin: 10px auto;
-		max-height: 250px;
 	}
 
 	.video img, .video.grid img{
@@ -97,10 +133,19 @@
 
 	.video div, .video.grid div{
 		width: 100%;
-		margin: 3px;
+		height: auto;
+		min-height: auto;
+		max-height: auto;
+		padding-left: 0;
+	}
+
+	.video div h3{
+		margin:5px 0;
+		font-size:14px;
 	}
 
 	.video div p, .video.grid div p{
-		display: none;
+		margin: 5px 0;
+		font-size: 12px;
 	}
 }

@@ -38,7 +38,7 @@ export class Main extends React.Component {
 
 	showVideos = () => {
 		if(this.state.users.length) {
-			return this.state.users.map(user => user.snippet ? <Video key={user.id.videoId} id={user.id.videoId} image={user.snippet.thumbnails.default.url} title={user.snippet.title} desc={user.snippet.description} key={user.id.videoId} openVideo={this.openVideo} layout={this.state.layout}/> : null) 
+			return this.state.users.map(user => user.snippet ? <Video key={user.id.videoId} id={user.id.videoId} image={user.snippet.thumbnails.high.url} title={user.snippet.title} desc={user.snippet.description} key={user.id.videoId} openVideo={this.openVideo} layout={this.state.layout}/> : null) 
 		}
 		return <p>X No matching results!</p>;
 	}
@@ -47,7 +47,7 @@ export class Main extends React.Component {
 		console.log(term)
 		fetch(baseURL+term)
 		.then(data => data.json())
-		.then(results => term !== "&q=" ? this.setState({users:results.items}) : this.setState({users:[]}))
+		.then(results => term !== "&q=" ? this.setState({users:results.items}, console.log(results.items)) : this.setState({users:[]}))
 	}
 
 	render() {

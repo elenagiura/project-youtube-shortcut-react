@@ -5,33 +5,35 @@ header .search-section {
 }
 
 header .search-section input, header .search-section button{
-	border:none;
+	border:solid 1px #ccc;
     outline: none;
-	border-radius:5px;
 	height: 25px;
-	padding: 0 20px;
+	padding: 0 10px;
 }
 
 header .search-section input {
-	margin-right:15px;
 	width: 250px;
 }
 
 header .search-section button {
 	background-color: #ef0800;
+	border:solid 1px #ef0800;
 	color: #fff;
 	font-width: bold;
 }
 
-@media all and (max-width:650px) {
+@media all and (max-width:600px) {
 	header .search-section {
 		float:none;
-		line-height: 0;
-		padding: 0 10px 10px;
+		padding: 0;
+		padding-bottom: 20px;
+		min-width: 100%;
+		display: flex;
+		justify-content: center;
 	}
 
 	header .search-section input {
-		width: 70%;
+		width: 63%;
 	}
 
 	header .search-section button {
